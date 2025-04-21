@@ -42,5 +42,3 @@ with sync_playwright() as playwright:
     text_subheader = page.get_by_test_id('courses-list-empty-view-description-text')
     expect(text_subheader).to_be_visible()
     expect(text_subheader).to_have_text('Results from the load test pipeline will be displayed here')
-
-
